@@ -17,7 +17,7 @@ interface ERC20 {
 
 contract User {
     ERC20 token;
-    constructor(ERC20 _token) public {
+    constructor(ERC20 _token) {
         token = _token;
     }
 

@@ -29,7 +29,7 @@ contract Uint96ERC20 {
     }
 
     // --- Init ---
-    constructor(uint96 _supply) public {
+    constructor(uint96 _supply) {
         supply = _supply;
         balances[msg.sender] = _supply;
         emit Transfer(address(0), msg.sender, _supply);

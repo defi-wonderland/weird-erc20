@@ -36,7 +36,7 @@ contract ProxiedToken {
     }
 
     // --- Init ---
-    constructor(uint _totalSupply) public {
+    constructor(uint _totalSupply) {
         admin[msg.sender] = true;
         totalSupply = _totalSupply;
         balanceOf[msg.sender] = _totalSupply;
@@ -99,7 +99,7 @@ contract ProxiedToken {
 
 contract TokenProxy {
     address payable immutable public impl;
-    constructor(address _impl) public {
+    constructor(address _impl) {
         impl = payable(_impl);
     }
 

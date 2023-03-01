@@ -16,7 +16,7 @@ contract PausableToken is ERC20 {
     function start() auth external { live = true; }
 
     // --- Init ---
-    constructor(uint _totalSupply) ERC20(_totalSupply) public {
+    constructor(uint _totalSupply) ERC20(_totalSupply) {
         owner = msg.sender;
     }
 

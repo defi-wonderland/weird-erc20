@@ -11,7 +11,7 @@ contract Proxy {
 
     // --- init ---
 
-    constructor(uint totalSupply) public {
+    constructor(uint totalSupply) {
 
         // Manual give()
         bytes32 slot = ADMIN_KEY;
