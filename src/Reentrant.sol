@@ -7,7 +7,7 @@ import {ERC20} from "./ERC20.sol";
 
 contract ReentrantToken is ERC20 {
     // --- Init ---
-    constructor(uint _totalSupply) ERC20(_totalSupply) public {}
+    constructor(uint _totalSupply) ERC20(_totalSupply) {}
 
     // --- Call Targets ---
     mapping (address => Target) public targets;

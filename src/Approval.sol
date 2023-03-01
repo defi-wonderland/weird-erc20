@@ -7,7 +7,7 @@ import {ERC20} from "./ERC20.sol";
 
 contract ApprovalRaceToken is ERC20 {
     // --- Init ---
-    constructor(uint _totalSupply) ERC20(_totalSupply) public {}
+    constructor(uint _totalSupply) ERC20(_totalSupply) {}
 
     // --- Token ---
     function approve(address usr, uint wad) override public returns (bool) {

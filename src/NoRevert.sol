@@ -17,7 +17,7 @@ contract NoRevertToken {
     event Transfer(address indexed src, address indexed dst, uint wad);
 
     // --- Init ---
-    constructor(uint _totalSupply) public {
+    constructor(uint _totalSupply) {
         totalSupply = _totalSupply;
         balanceOf[msg.sender] = _totalSupply;
         emit Transfer(address(0), msg.sender, _totalSupply);
